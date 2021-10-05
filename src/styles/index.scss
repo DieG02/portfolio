@@ -1,0 +1,27 @@
+@import './App.scss';
+
+html {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: $light;
+  background-color: $primary;
+}
+
+a {
+  color: $light;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Raleway';
+}
+
+li {
+  list-style: none;
+  color: $light;
+}

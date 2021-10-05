@@ -1,0 +1,60 @@
+// Variables
+$primary: #ff5e62;
+$light: #f0f0f0;
+$dark: #101010;
+$black: #0f0f0f; 
+
+
+//Mixin
+@mixin center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin text-center {
+  font-style: normal;
+  text-align: center;
+}
+// @mixin font-family {
+//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//   font-weight: normal;
+// }
+
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  white-space: nowrap;
+  color: $light;
+}
+
+.subtitle {
+  @include text-center();
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  color: $light;
+}
+
+.App {
+  background-color: red;
+  margin: 0;
+}
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
