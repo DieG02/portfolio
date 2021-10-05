@@ -23,11 +23,24 @@
       justify-content: space-between;
       align-items: center;
       margin: 0px 5px;
-      font-weight: 600;
+      font-weight: 700;
     }
     a {
       font-size: 15px;
       padding: 0.5em 1em;
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    a {
+      width: 1.4em; 
+      height: 1.4em;
+      &:first-of-type {
+        margin-right: 1.5em;
+      }
     }
   }
   

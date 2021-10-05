@@ -28,14 +28,13 @@ export default function NavBar () {
           </li>
         </ul>
       </nav>
-      <div>
-        <a href='#'>
+      <div className='icons'>
+        <a href='https://github.com/DieG02' target='_blank'>
           <GitHub/>
         </a>
-        <a href='#'>
+        <a href='https://www.linkedin.com/in/diegobautista02' target='_blank'>
           <LinkedIn/>
         </a>
-        <p>para</p>
       </div>
     </div>
   )
