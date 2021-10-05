@@ -1,6 +1,6 @@
 import React from 'react';
-import github from '../assets/github.svg';
-import linkedIn from '../assets/linkedIn.svg';
+import GitHub from '../assets/github.jsx';
+import LinkedIn from '../assets/linkedIn.jsx';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {
@@ -30,11 +30,12 @@ export default function NavBar () {
       </nav>
       <div>
         <a href='#'>
-          <image alt='logo_' src={github} width='30px'/>
+          <GitHub/>
         </a>
         <a href='#'>
-          <image alt='logo_' src={linkedIn} width='30px'/>
+          <LinkedIn/>
         </a>
+        <p>para</p>
       </div>
     </div>
   )
