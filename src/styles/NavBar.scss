@@ -1,5 +1,4 @@
 @import './App.scss';
-
 $navBarHeight: 60px;
 
 .navbar-container {
@@ -10,7 +9,7 @@ $navBarHeight: 60px;
   flex-direction: row;
   background-color: $black;
   position: fixed;
-  // @include spacing('px', 50px);
+  @include spacing('px', 50px);
   .logo {
     align-self: center;
     p {

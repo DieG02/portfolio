@@ -7,7 +7,6 @@ $light: #f0f0f0;
 $dark: #151515;
 $black: #0f0f0f; 
 
-
 //Mixin
 @mixin center-container {
   display: flex;
@@ -36,6 +35,9 @@ $black: #0f0f0f;
     padding-bottom: $value;
   }
 }
+@mixin navBarHeight {
+  padding-top: 60px
+}
 
 .title {
   font-size: 36px;
@@ -60,6 +62,9 @@ $black: #0f0f0f;
   margin: 0;
   width: 100vw;
   height: 100vh;
+  & > * {
+    box-sizing: border-box;
+  }
 }
 
 // @media (prefers-reduced-motion: no-preference) {
