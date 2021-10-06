@@ -13,19 +13,19 @@ export default function NavBar () {
       <nav>
         <ul>
           <li>
-            <a href='#'>Inicio</a>
+            <a href='#home'>Inicio</a>
           </li>
           <li>
-            <a href='#'>Sobre mi</a>
+            <a href='#about'>Sobre mi</a>
           </li>
           <li>
-            <a href='#'>Skills</a>
+            <a href='#skills'>Skills</a>
           </li>
           <li>
-            <a href='#'>Proyectos</a>
+            <a href='#projects'>Proyectos</a>
           </li>
           <li>
-            <a href='#'>Contacto</a>
+            <a href='#contact'>Contacto</a>
           </li>
         </ul>
       </nav>

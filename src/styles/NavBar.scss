@@ -3,13 +3,14 @@
 $navBarHeight: 60px;
 
 .navbar-container {
-  position: sticky;
   height: $navBarHeight;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   flex-direction: row;
   background-color: $black;
-  @include spacing('px', 40px);
+  position: fixed;
+  // @include spacing('px', 50px);
   .logo {
     align-self: center;
     p {
