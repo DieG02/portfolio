@@ -6,6 +6,10 @@ $primary: #ff2e45;
 $light: #f0f0f0;
 $dark: #151515;
 $black: #0f0f0f; 
+/*
+$primary: #ff495c;
+$dark: #32334f;
+*/
 
 //Mixin
 @mixin center-container {
@@ -39,24 +43,6 @@ $black: #0f0f0f;
   padding-top: 60px
 }
 
-.title {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: left;
-  margin: 0;
-  white-space: nowrap;
-  color: $light;
-}
-
-.subtitle {
-  @include text-center();
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0;
-  white-space: nowrap;
-  color: $light;
-}
-
 .App {
   background-color: $dark;
   margin: 0;
@@ -66,6 +52,25 @@ $black: #0f0f0f;
     box-sizing: border-box;
   }
 }
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: left;
+  margin: 0;
+  white-space: nowrap;
+  color: white;
+}
+
+.subtitle {
+  @include text-center();
+  font-size: 36px;
+  font-weight: 690;
+  margin: 0;
+  white-space: nowrap;
+  color: $light;
+}
+
 
 // @media (prefers-reduced-motion: no-preference) {
 //   .App-logo {

@@ -6,7 +6,7 @@ import '../styles/NavBar.scss';
 
 export default function NavBar () {
   return (
-    <header className='navbar-container'>
+    <header className='navbar'>
       <div className='logo'>
         <p>Diego<br/>Bautista</p>
       </div>
