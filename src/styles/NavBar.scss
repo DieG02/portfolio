@@ -18,17 +18,17 @@ $navBarHeight: 60px;
       font-weight: 700;
     }
   }
-  
-  ul {
-    @include spacing('my', ($navBarHeight/4));
-    li {
-      display: flex;
-      text-transform: uppercase;
-      justify-content: space-between;
-      align-items: center;
-      padding: 4px 20px;
-      font-weight: 700;
-    }
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  ul li {
+    display: inherit;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px;
+    font-weight: 700;
   }
 
   .icons {
