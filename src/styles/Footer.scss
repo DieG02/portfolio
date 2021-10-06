@@ -1,6 +1,7 @@
 @import './App.scss';
 
 .footer {
-  position: static;
-  background-color: $primary
+  position: relative;
+  top: 0;
+  background-color: $primary;
 }

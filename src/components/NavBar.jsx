@@ -6,7 +6,7 @@ import '../styles/NavBar.scss';
 
 export default function NavBar () {
   return (
-    <div className='navbar-container'>
+    <header className='navbar-container'>
       <div className='logo'>
         <p>Diego<br/>Bautista</p>
       </div>
@@ -37,6 +37,6 @@ export default function NavBar () {
           <LinkedIn/>
         </a>
       </div>
-    </div>
+    </header>
   )
 }
