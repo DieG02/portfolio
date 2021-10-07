@@ -4,5 +4,58 @@
   @include navBarHeight();
   height: 100vh;
   background-color: $dark;
-  display: block;
+  display: flex;
+  .content {
+    flex: 1;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box !important;
+    > * {
+      position: relative;
+      left: 70px
+    }
+    .icon-container {
+      position: relative;
+      top: 25px;
+      font-size: 25px;
+      .icon {
+        text-align: center;
+        color: $light;
+        font-size: 100%;
+      }
+      &::after {
+        content: '';
+        margin-right: 1em;
+      };
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+    div img {
+      border-radius: 0 1.5em;
+      margin-right: 1.5em;
+    }
+  }
+
+  .cover {
+    flex: 1;
+    background-color: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 }

@@ -46,15 +46,13 @@ $dark: #32334f;
 .App {
   background-color: $dark;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
   & > * {
     box-sizing: border-box;
   }
 }
 
 .title {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 800;
   text-align: left;
   margin: 0;

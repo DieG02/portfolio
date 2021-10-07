@@ -10,7 +10,7 @@ export default function NavBar () {
       <div className='logo'>
         <p>Diego<br/>Bautista</p>
       </div>
-      <nav>
+      <nav style={{ position: 'relative', right: '-20px' }}>
         <ul>
           <li>
             <a href='#home'>Inicio</a>
@@ -29,14 +29,14 @@ export default function NavBar () {
           </li>
         </ul>
       </nav>
-      <div className='icons'>
+      {/* <div className='icons'>
         <a href='https://github.com/DieG02' target='_blank'>
           <GitHub/>
         </a>
         <a href='https://www.linkedin.com/in/diegobautista02' target='_blank'>
           <LinkedIn/>
         </a>
-      </div>
+      </div> */}
     </header>
   )
 }
