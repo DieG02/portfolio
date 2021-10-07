@@ -1,0 +1,8 @@
+@import './App.scss';
+
+.about {
+  @include navBarHeight();
+  height: 100vh;
+  background-color: green;
+  display: flex;
+}

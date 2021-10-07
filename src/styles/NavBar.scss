@@ -2,20 +2,22 @@
 $navBarHeight: 60px;
 
 .navbar {
+  @include spacing('px', 70px);
   height: $navBarHeight;
+  position: fixed;
+  z-index: 10;
   display: flex;
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
   background-color: $black;
-  position: fixed;
-  @include spacing('px', 70px);
   .logo {
     align-self: center;
     p {
       color: $light;
       font-size: 19px;
-      font-weight: 700;
+      line-height: 20px;
+      font-weight: 500;
     }
   }
   nav{
@@ -28,7 +30,7 @@ $navBarHeight: 60px;
     justify-content: space-between;
     align-items: center;
     padding: 4px 20px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .icons {
