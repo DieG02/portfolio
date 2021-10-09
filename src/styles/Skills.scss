@@ -1,0 +1,8 @@
+@import './App.scss';
+
+#skills {
+  @include navBarHeight();
+  @include spacing('px', 70px);
+  background-color: $dark;
+  height: 100vh;
+}

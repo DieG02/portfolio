@@ -1,7 +1,5 @@
 import React from 'react';
 // import Logo from '../assets/logo.jsx';
-import GitHub from '../assets/github.jsx';
-import LinkedIn from '../assets/linkedIn.jsx';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {
