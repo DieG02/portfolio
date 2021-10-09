@@ -1,10 +1,12 @@
 // Variables
-// $primary: #ff5e62;
-$primary: #ff2e45;
+$primary: #ff5e62;
+$secondary: #ff2e45;
+// $primary: #ff2e45;
 // $primary: #08bb85;
 // $primary: #fbdf7e;
 $light: #f0f0f0;
-$dark: #151515;
+$grey: #e6e6e6;
+$dark: #222;
 $black: #0f0f0f; 
 /*
 $primary: #ff495c;
@@ -22,6 +24,7 @@ $dark: #32334f;
   text-align: center;
 }
 @mixin spacing($type, $value) {
+  box-sizing: border-box;
   @if ($type == 'mx') {
     margin-left: $value;
     margin-right: $value;
@@ -52,7 +55,7 @@ $dark: #32334f;
 }
 
 .title {
-  font-size: 52px;
+  font-size: 3.3rem;
   font-weight: 800;
   text-align: left;
   margin: 0;
@@ -62,8 +65,8 @@ $dark: #32334f;
 
 .subtitle {
   @include text-center();
-  font-size: 36px;
-  font-weight: 690;
+  font-size: 3rem;
+  font-weight: 700;
   margin: 0;
   white-space: nowrap;
   color: $light;

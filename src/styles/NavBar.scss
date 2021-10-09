@@ -31,6 +31,9 @@ $navBarHeight: 60px;
     align-items: center;
     padding: 4px 20px;
     font-weight: 500;
+    a:hover {
+      color: $primary;
+    }
   }
 
   .icons {
@@ -42,6 +45,7 @@ $navBarHeight: 60px;
     a {
       width: 1.4em; 
       height: 1.4em;
+      color: greenyellow;
     }
   }
   
