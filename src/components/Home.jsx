@@ -39,10 +39,10 @@ export default function Home () {
         </div>
 
         <div className='cover'>
-          <img
+          {/* <img
             src='https://i.ibb.co/NT9hT9m/Devices-bro.png'
             alt='Devices-bro'
-          />
+          /> */}
         </div>
       </div>
     </section>

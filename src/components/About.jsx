@@ -6,7 +6,7 @@ export default function About () {
   return (
     <section id='about'>
       <div className='about'>
-        <h2 className='subtitle'>Sobre mi</h2>
+        <h2 className='subtitle'>Sobre Mi</h2>
         <div className='content'>
           <div className='card'>
             <img 

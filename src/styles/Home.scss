@@ -2,11 +2,15 @@
 
 #home {
   @include navBarHeight();
-  @include spacing('px', 70px);
+  @include spacing('px', 100px);
   background-color: $grey;
   height: 100vh;
   background: $dark;
-  background: linear-gradient(90deg, $primary 0%, $primary, 50%, $dark 50%, $dark 100%);
+  background-image: url('../assets/bg/home.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 0px;
+  background-size: 90vh;
+  // background: linear-gradient(90deg, $primary 0%, $primary, 70%, $dark 30%, $dark 100%);
 }
 
 .home {
@@ -21,13 +25,13 @@
     .icon-container {
       position: relative;
       top: 20px;
-      font-size: 25px;
+      font-size: 1.5em;
       .icon {
         text-align: center;
         color: $light;
-        font-size: 100%;
+        font-size: 1em;
         &:hover {
-          color: $secondary;
+          color: $primary;
         }
       }
       &::after {
@@ -37,8 +41,8 @@
     }
     h3 {
       font-weight: 500;
-      font-size: 30px;
-      line-height: 30px;
+      font-size: 1.7em;
+      line-height: 1em;
     }
     h4 {
       font-size: 20px;
