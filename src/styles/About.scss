@@ -30,6 +30,9 @@
       border-radius: 10px;
       padding: 2rem 1rem 1rem;
       position: relative;
+      box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.35);
+      -webkit-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.35);
+      -moz-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.35);
       img {
         width: 6em;
         height: 6em;

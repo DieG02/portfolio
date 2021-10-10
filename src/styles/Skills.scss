@@ -6,3 +6,39 @@
   background-color: $dark;
   height: 100vh;
 }
+
+.skills {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  align-items: center;
+  .content {
+    display: flex; 
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornflowerblue;
+    ul {
+      background-color: crimson;
+      height: 45%;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2em;
+      &:first-of-type li{
+        @include spacing('px', 2em);
+        background-color: $light;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          background-color: greenyellow;
+          color: $dark;
+        }
+      }
+    }
+  }
+
+}
