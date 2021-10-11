@@ -10,32 +10,80 @@
 .skills {
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
   align-items: center;
   .content {
+    position: relative;
     display: flex; 
     height: 100%;
     flex-direction: column;
-    align-items: center;
-    background-color: cornflowerblue;
+    justify-content: center;
     ul {
-      background-color: crimson;
-      height: 45%;
-      align-items: center;
       flex-wrap: wrap;
-      gap: 2em;
-      &:first-of-type li{
-        a {
-          width: 5em;
-          height: 5em;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: greenyellow;
-          color: $dark;
-        }
+      gap: 2em; 
+      display: flex;
+    }
+    ul:first-of-type {
+      background: $dark;
+      align-self: center;
+      z-index: 1;
+      width: 75%;
+      max-width: 750px;
+      display: flex;
+      justify-content: space-between;
+      img {
+        display: flex;
+        width: 80px;
       }
+    }
+    ul:last-of-type {
+      background: rgb(49, 49, 49);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .items {
+        position: absolute;
+      }
+      .item0 {
+        background-color: #F00;
+        left: 0px;
+      }
+      .item1 {
+        left: 60px;
+      }
+      .item2 {
+        left: 100px; 
+      }
+      .item3 {
+        left: 150px;
+      }
+      .item4 {
+        left: 200px;
+      }
+      .item5 {
+        left: 250px;
+      }
+      .item6 {
+        left: 340px; 
+      }
+      .item7 {
+        left: 400px;
+      }
+      .item8 {
+        left: 500px;
+      }
+      .item9 {
+        left: 580px;
+      }
+      .item10 {
+        left: 650px;
+      }
+      .item10 {
+        left: 800px;
+      }
+    }
+    .item11 {
+      left: 900px;
     }
   }
 

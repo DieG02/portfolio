@@ -1,18 +1,18 @@
 import React from 'react';
+import html_icon from '../assets/icons/html.svg';
+import javascript_icon from '../assets/icons/javascript.svg';
+import react_icon from '../assets/icons/react.svg';
+import postgresql_icon from '../assets/icons/postgresql.svg';
+import node_icon from '../assets/icons/node.svg';
 import '../styles/Skills.scss';
 
 export default function Skills() {
-  const my_skills = {
-    'main': [
-      'HTML', 'CSS', 'JS',
-      'React', 'RN CLI', 'NodeJS'
-    ],
-    'auxiliary': [
-      'Redux', 'Expo', 'Sass', 
-      'Bootstrap', 'Figma', 'PostgreSQL',
-      'Firebase', 'Express', 'Sequelize'
-    ]
-  }
+  const skills =   [
+    'RN', 'CSS', 'Redux', 'Expo', 'Sass',
+    'Bootstrap', 'Figma', 'PostgreSQL', 'Firebase', 'Express', 
+    'Sequelize'
+  ]
+
 
 
   return (
@@ -22,56 +22,25 @@ export default function Skills() {
         <div className='content'>
           <ul>
             <li>
-              <a>HTML</a>
+              <img src={html_icon} alt='html' />
             </li>
             <li>
-              <a>CSS</a>
+              <img src={javascript_icon} alt='javascript' />
             </li>
             <li>
-              <a>JS</a>
+                <img src={react_icon} alt='react' />
             </li>
             <li>
-              <a>React</a>
-            </li>
-            <li>
-              <a>RN CLI</a>
-            </li>
-            <li>
-              <a>NodeJS</a>
+              <img src={node_icon} alt='node' />
             </li>
           </ul>
-
+           
           <ul>
-            <li>
-              <a>Redux</a>
-            </li>
-            <li>
-              <a>Expo</a>
-            </li>
-            <li>
-              <a>Sass</a>
-            </li>
-            <li>
-              <a>Bootstrap</a>
-            </li>
-            <li>
-              <a>Figma</a>
-            </li>
-            <li>
-              <a>PostgreSQL</a>
-            </li>
-            <li>
-              <a>Firebase</a>
-            </li>
-            <li>
-              <a>Express</a>
-            </li>
-            <li>
-              <a>Sequelize</a>
-            </li>
-            <li>
-              <a>Webpack</a>
-            </li>
+            {skills.map((name, i) => 
+              <li key={i} className={`item${i} items`}>
+                {name}
+              </li>
+            )}
           </ul>
         </div>
       </div>
