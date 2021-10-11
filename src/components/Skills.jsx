@@ -9,7 +9,7 @@ import '../styles/Skills.scss';
 export default function Skills() {
   const skills = {
     front: [
-      'React\nNative', 'CSS', 'Redux', 'Expo', 'Sass',
+      'CSS', 'React\nNative', 'Redux', 'Expo', 'Sass',
       'Bootstrap', 'Figma'
     ],
     back: [

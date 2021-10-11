@@ -33,6 +33,10 @@
       box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.35);
       -webkit-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.35);
       -moz-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.35);
+      &:hover {
+        transition: 0.5s;
+        box-shadow: none;
+      }
       img {
         width: 6em;
         height: 6em;
