@@ -22,31 +22,57 @@
     .items {
       position: absolute;
       color: $black;
+      cursor: default;
+      &:hover {
+        color: $primary; 
+        background: $gradient1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
   .front-skills {
-    background: #f00;
+    // background: #f00;
     position: relative;
     .front0 {
-      left: 0px;
+      top: 30%;
+      left: 0%;
+      white-space: pre-wrap;
+      line-height: 1em;
+      font-size: 1.4em;
+      font-weight: 600;
+      text-align: center;
     }
     .front1 {
-      left: 60px;
+      left: 30%;
+      bottom: 40%;
+      font-size: 1.3em;
+      font-weight: 600;
     }
     .front2 {
-      left: 100px; 
+      left: 50%; 
+      font-size: 0.9em;
     }
     .front3 {
-      left: 150px;
+      right: 30%;
+      top: 5%;
+      font-size: 1.1em;
     }
     .front4 {
-      left: 200px;
+      right: 20%;
+      top: 60%;
+      font-size: 1.3em;
+      font-weight: 600;
     }
     .front5 {
-      left: 250px;
+      right: 5%;
+      top: 20%;
+      font-size: 0.9em;
     }
     .front6 {
-      left: 340px; 
+      right: 2%;
+      bottom: -25%; 
     }
   }
   .main-skills ul {
@@ -63,9 +89,9 @@
     // background: #00f;
     position: relative;
     .back0 {
-      top: -25%;
-      left: 0%;
-      font-size: 1.1em;
+      top: -20%;
+      left: 1%;
+      font-size: 1.2em;
     }
     .back1 {
       bottom: 20%;
@@ -80,62 +106,9 @@
     .back3 {
       top: 30%;
       right: 15%;
-      font-size: 1em;
+      font-size: 1.2em;
+      font-weight: 600;
     }
   }
 }
 
-
-
-/*
- .main {
-      background: $dark;
-      width: 75%;
-      height: 80px !important;
-      max-width: 750px;
-      justify-content: space-between;
-      img {
-        display: flex;
-        width: 80px;
-      }
-    }
-*/
-
-
-/*
-
-   .front0 {
-        background-color: #F00;
-        left: 0px;
-      }
-      .front1 {
-        left: 60px;
-      }
-      .front2 {
-        left: 100px; 
-      }
-      .front3 {
-        left: 150px;
-      }
-      .front4 {
-        left: 200px;
-      }
-      .front5 {
-        left: 250px;
-      }
-      .front6 {
-        left: 340px; 
-      }
-      .back0 {
-        left: 400px;
-      }
-      .back1 {
-        left: 500px;
-      }
-      .back2 {
-        left: 580px;
-      }
-      .back3 {
-        left: 650px;
-      }
-*/
