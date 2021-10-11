@@ -14,77 +14,128 @@
   align-items: center;
   .content {
     position: relative;
-    display: flex; 
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    ul {
-      flex-wrap: wrap;
-      gap: 2em; 
-      display: flex;
+    height: 90%;
+    background-color: $dark;
+    display: grid;
+    grid-template-rows: 2fr auto 2fr;
+    grid-template-columns: 1fr;
+    .items {
+      position: absolute;
+      color: $black;
     }
-    ul:first-of-type {
+  }
+  .front-skills {
+    background: #f00;
+    position: relative;
+    .front0 {
+      left: 0px;
+    }
+    .front1 {
+      left: 60px;
+    }
+    .front2 {
+      left: 100px; 
+    }
+    .front3 {
+      left: 150px;
+    }
+    .front4 {
+      left: 200px;
+    }
+    .front5 {
+      left: 250px;
+    }
+    .front6 {
+      left: 340px; 
+    }
+  }
+  .main-skills ul {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+    img {
+      height: 100%;
+    }
+  }
+  .back-skills {
+    // background: #00f;
+    position: relative;
+    .back0 {
+      top: -25%;
+      left: 0%;
+      font-size: 1.1em;
+    }
+    .back1 {
+      bottom: 20%;
+      left: 25%;
+      font-size: 1em;
+    }
+    .back2 {
+      top: 50%;
+      right: 30%;
+      font-size: 0.9em;
+    }
+    .back3 {
+      top: 30%;
+      right: 15%;
+      font-size: 1em;
+    }
+  }
+}
+
+
+
+/*
+ .main {
       background: $dark;
-      align-self: center;
-      z-index: 1;
       width: 75%;
+      height: 80px !important;
       max-width: 750px;
-      display: flex;
       justify-content: space-between;
       img {
         display: flex;
         width: 80px;
       }
     }
-    ul:last-of-type {
-      background: rgb(49, 49, 49);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      .items {
-        position: absolute;
-      }
-      .item0 {
+*/
+
+
+/*
+
+   .front0 {
         background-color: #F00;
         left: 0px;
       }
-      .item1 {
+      .front1 {
         left: 60px;
       }
-      .item2 {
+      .front2 {
         left: 100px; 
       }
-      .item3 {
+      .front3 {
         left: 150px;
       }
-      .item4 {
+      .front4 {
         left: 200px;
       }
-      .item5 {
+      .front5 {
         left: 250px;
       }
-      .item6 {
+      .front6 {
         left: 340px; 
       }
-      .item7 {
+      .back0 {
         left: 400px;
       }
-      .item8 {
+      .back1 {
         left: 500px;
       }
-      .item9 {
+      .back2 {
         left: 580px;
       }
-      .item10 {
+      .back3 {
         left: 650px;
       }
-      .item10 {
-        left: 800px;
-      }
-    }
-    .item11 {
-      left: 900px;
-    }
-  }
-
-}
+*/

@@ -7,20 +7,60 @@ import node_icon from '../assets/icons/node.svg';
 import '../styles/Skills.scss';
 
 export default function Skills() {
-  const skills =   [
-    'RN', 'CSS', 'Redux', 'Expo', 'Sass',
-    'Bootstrap', 'Figma', 'PostgreSQL', 'Firebase', 'Express', 
-    'Sequelize'
-  ]
-
-
+  const skills = {
+    front: [
+      'RN', 'CSS', 'Redux', 'Expo', 'Sass',
+      'Bootstrap', 'Figma'
+    ],
+    back: [
+      'Express', 'Firebase',
+      'PostgreSQL', 'Sequelize'
+    ]
+  }
 
   return (
     <section id='skills'>
       <div className='skills'>
         <h2 className='subtitle'>Tecnologías</h2>
         <div className='content'>
-          <ul>
+          
+          <div className='front-skills'>
+            {skills.front.map((name, i) => 
+              <p className={`front${i} items`}>{name}</p>
+            )}
+          </div>
+          <div className='main-skills'>
+            <ul>
+              <li>
+                <img src={html_icon} alt='html' />
+              </li>
+              <li>
+                <img src={javascript_icon} alt='javascript' />
+              </li>
+              <li>
+                <img src={react_icon} alt='react' />
+              </li>
+              <li>
+                <img src={node_icon} alt='node' />
+              </li>
+            </ul>
+          </div>
+
+          <div className='back-skills'>
+            {skills.back.map((name, i) =>
+              <p className={`back${i} items`}>{name}</p>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+
+/*
+
+  <ul>
             <li>
               <img src={html_icon} alt='html' />
             </li>
@@ -34,16 +74,5 @@ export default function Skills() {
               <img src={node_icon} alt='node' />
             </li>
           </ul>
-           
-          <ul>
-            {skills.map((name, i) => 
-              <li key={i} className={`item${i} items`}>
-                {name}
-              </li>
-            )}
-          </ul>
-        </div>
-      </div>
-    </section>
-  )
-}
+
+*/
