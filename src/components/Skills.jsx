@@ -2,7 +2,7 @@ import React from 'react';
 import html_icon from '../assets/icons/html.svg';
 import javascript_icon from '../assets/icons/javascript.svg';
 import react_icon from '../assets/icons/react.svg';
-import postgresql_icon from '../assets/icons/postgresql.svg';
+// import postgresql_icon from '../assets/icons/postgresql.svg';
 import node_icon from '../assets/icons/node.svg';
 import '../styles/Skills.scss';
 
@@ -26,7 +26,7 @@ export default function Skills() {
           
           <div className='front-skills'>
             {skills.front.map((name, i) => 
-              <p className={`front${i} items`}>{name}</p>
+              <p key={i} className={`front${i} items`}>{name}</p>
             )}
           </div>
           <div className='main-skills'>
@@ -48,7 +48,7 @@ export default function Skills() {
 
           <div className='back-skills'>
             {skills.back.map((name, i) =>
-              <p className={`back${i} items`}>{name}</p>
+              <p key={i} className={`back${i} items`}>{name}</p>
             )}
           </div>
         </div>
