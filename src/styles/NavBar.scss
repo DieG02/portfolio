@@ -5,7 +5,7 @@ $navBarHeight: 60px;
   @include spacing('px', 70px);
   height: $navBarHeight;
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   display: flex;
   width: 100%;
   justify-content: space-between;
