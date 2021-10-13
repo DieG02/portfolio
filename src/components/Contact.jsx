@@ -12,6 +12,8 @@ export default function Contact() {
     })
   }
 
+  if(!false) return null;
+
   return (
     <section id='contact'>
       <div className='contact'>
@@ -23,24 +25,24 @@ export default function Contact() {
             <i class="fas fa-times"/>
           </label>
           <div>
-            <label name='fullName'>
+            <div name='fullName'>
               <span>Nombre y Apellido</span>
-              <input type='text'/>
-            </label>
-            <label name='email'>
+              <input type='text' placeholder='Ej. Nombre Usuario'/>
+            </div>
+            <div name='email'>
               <span>Email</span>
-              <input type='email'/>
-            </label>
+              <input type='email' placeholder='Ej. nombreusuario@gmail.com'/>
+            </div>
           </div>
 
-          <label name='message'>
+          <div name='message'>
             <span>Mensaje</span>
-            <textarea cols="50" rows="15"></textarea>
-          </label>
+            <textarea id='message' placeholder='Escriba su mensaje'/>
+          </div>
 
-          <label name='button'>
+          <div name='button'>
             <input type='submit'/>
-          </label>
+          </div>
         </form>
       </div>
     </section>

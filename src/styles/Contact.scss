@@ -57,20 +57,43 @@
       flex: 3;
     }
     [name=fullName] {
-      background-color: red;
-      flex: 1;
       display: flex;
+      flex: 1;
       flex-direction: column;
+      margin-right: 1em;
     }
     [name=email] {
-      background-color: blue;
       display: flex;
-      flex: 1;
+      flex: 1.2;
       flex-direction: column;
+      margin-left: 1em;
     }
     [name=message] {
-      background-color: green;
+      display: flex;
       flex: 9;
+      flex-direction: column;
+    }
+    [name=fullName],
+    [name=email],
+    [name=message] {
+      span {
+        font-size: 0.7em;
+        margin-bottom: 0.5em;
+      }
+      input, textarea {
+        border: none;
+        background: $black;
+        padding: 10px;
+        color: $light;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        ::placeholder {
+          color: $light;
+        }
+      }
+      textarea {
+        flex: 1;
+      }
     }
     [name=button] {
       flex: 2;
@@ -88,13 +111,13 @@
         color: $light;
         font-family: 'Poppins', sans-serif;
         font-size: 14px;
-        bottom: -2px;
-        right: -2px;
+        bottom: 0;
+        right: 0;
         &:hover {
           transition: 0.3s;
           background: $secondary;
-          bottom: 0;
-          right: 0;
+          bottom: -2px;
+          right: -1px;
         }
       }
     }
