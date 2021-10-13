@@ -19,7 +19,7 @@ export default function Home () {
               <i className='fab fa-whatsapp icon' />
             </a>
             {/* <a href='mailto:diegobautista2002@gmail.com' target='_blank' className='icon-container' rel='noopener noreferrer'> */}
-            <a href='#home' className='icon-container'>
+            <a href='#home' className='icon-container'  >
               <i className='far fa-envelope icon' />
             </a>
           </div>

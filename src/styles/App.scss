@@ -10,6 +10,7 @@ $grey: #e0e0e0;
 $dark: #191919;
 $black: #232323; 
 $gradient1: -webkit-linear-gradient(135deg, $primary, $blue);
+$gradient2: -webkit-linear-gradient(-45deg, $primary 20%, $secondary);
 
 //Mixin
 @mixin center-container {

@@ -16,36 +16,88 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(100,100,100,0.2);
+    background: rgba(50,50,50,0.5);
     backdrop-filter: blur(10px);
   }
 }
 
 .contact {
   margin: auto;
-  width: 75%;
-  max-width: 900px;
+  width: 80%;
+  max-width: 1000px;
   height: 75%;
-box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.49);
--webkit-box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.49);
--moz-box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.49);
+  box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.49);
+  -webkit-box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.49);
+  -moz-box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.49);
   border-radius: 25px;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   .bar-side {
     display: flex;
     align-items: center;
     justify-content: center;
-    // background: $gradient1;
-    background-color: $primary;
+    background: $gradient1;
+    // background: $gradient2;
     border-radius: 25px 0 0 25px;
   }
   .form-side {
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: $dark;
     border-radius: 0 25px 25px 0;
+    flex-direction: column;
+    padding: 2em;
+    .times {
+      margin-left: auto;
+      position: relative;
+      top: -0.5em;
+    }
+    >div {
+      display: flex;
+      flex: 3;
+    }
+    [name=fullName] {
+      background-color: red;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    [name=email] {
+      background-color: blue;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+    [name=message] {
+      background-color: green;
+      flex: 9;
+    }
+    [name=button] {
+      flex: 2;
+      margin-left: auto;
+      display: flex;
+      input {
+        width: 100px;
+        height: 40px;
+        position: relative;
+        align-self: flex-end;
+        cursor: pointer;
+        border: none;
+        border-radius: 0.5em;
+        background: $primary;
+        color: $light;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        bottom: -2px;
+        right: -2px;
+        &:hover {
+          transition: 0.3s;
+          background: $secondary;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+    
   }
 }
