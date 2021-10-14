@@ -15,12 +15,18 @@ $navBarHeight: 60px;
   background: linear-gradient(150deg, $dark 15%, transparent 100%);
 
   .logo {
-    align-self: center;
+    display: flex;
+    margin: auto 0px;
+    width: 35px;
     p {
-      color: $light;
-      font-size: 19px;
-      line-height: 20px;
-      font-weight: 500;
+      font-size: 1.25em;
+      margin-left: 0.5em;
+      color: white;
+      font-weight: 300;
+      span {
+        font-weight: 600;
+        font-size: 1.15em;
+      }
     }
   }
   nav{

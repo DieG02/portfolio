@@ -1,12 +1,16 @@
 import React from 'react';
-// import Logo from '../assets/logo.jsx';
+import Logo from '../assets/logo.svg';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {
   return (
     <header className='navbar'>
       <div className='logo'>
-        <p>Diego<br/>Bautista</p>
+        <img src={Logo} alt='logo_portfolio'/>
+        <p>
+          <span>DB</span> 
+          portofolio
+        </p>
       </div>
       <nav style={{ position: 'relative', right: '-20px' }}>
         <ul>
