@@ -1,9 +1,9 @@
 import React from 'react';
-import html_icon from '../assets/icons/html.svg';
-import javascript_icon from '../assets/icons/javascript.svg';
-import react_icon from '../assets/icons/react.svg';
+import HtmlIcon from '../assets/icons/html.jsx';
+import JavascriptIcon from '../assets/icons/javascript.jsx';
+import ReactIcon from '../assets/icons/react.jsx';
+import NodeIcon from '../assets/icons/node.jsx';
 // import postgresql_icon from '../assets/icons/postgresql.svg';
-import node_icon from '../assets/icons/node.svg';
 import '../styles/Skills.scss';
 
 export default function Skills() {
@@ -32,16 +32,20 @@ export default function Skills() {
           <div className='main-skills'>
             <ul>
               <li>
-                <img src={html_icon} alt='html' />
+                {/* <img src={html_icon} alt='html'  color='#ff5e62' /> */}
+                <HtmlIcon height='90' />
               </li>
               <li>
-                <img src={javascript_icon} alt='javascript' />
+                {/* <img src={javascript_icon} alt='javascript' /> */}
+                <JavascriptIcon height='90' />
               </li>
               <li>
-                <img src={react_icon} alt='react' />
+                {/* <img src={react_icon} alt='react' /> */}
+                <ReactIcon height='90'/>
               </li>
               <li>
-                <img src={node_icon} alt='node' />
+                {/* <img src={node_icon} alt='node' /> */}
+                <NodeIcon height='90'/>
               </li>
             </ul>
           </div>
