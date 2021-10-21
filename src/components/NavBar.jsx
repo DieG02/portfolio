@@ -9,7 +9,7 @@ export default function NavBar () {
         <img src={Logo} alt='logo_portfolio'/>
         <p>
           <span>DB</span> 
-          portofolio
+          portfolio
         </p>
       </div>
       <nav style={{ position: 'relative', right: '-20px' }}>
