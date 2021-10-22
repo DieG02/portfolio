@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 92.39 92.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="32.07" y1="32.07" x2="60.32" y2="60.32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff5e62" />
+      <stop offset="0.18" stop-color="#ff4b56" />
+      <stop offset="0.41" stop-color="#ff3b4d" />
+      <stop offset="0.66" stop-color="#ff3147" />
+      <stop offset="1" stop-color="#ff2e45" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.53" y1="13.53" x2="78.86" y2="78.86" xlink:href="#linear-gradient" />
+  </defs>
+  <title>Degradee_icon</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1" d="M27.72,38.71v15a5.48,5.48,0,0,0,2.75,4.76l13,7.49a5.48,5.48,0,0,0,5.51,0l13-7.49a5.48,5.48,0,0,0,2.75-4.76v-15a5.48,5.48,0,0,0-2.75-4.77L49,26.45a5.48,5.48,0,0,0-5.51,0l-13,7.49A5.48,5.48,0,0,0,27.72,38.71Z" />
+      <path class="cls-2" d="M92.39,46.18v.48A44.91,44.91,0,0,1,79.25,78.47l-.39.39h0A46.19,46.19,0,0,1,46.2,92.39H28.1a2.49,2.49,0,0,1-1.77-.73l-12.8-12.8L.73,66.06A2.49,2.49,0,0,1,0,64.29V28.1a2.49,2.49,0,0,1,.73-1.77l12.8-12.8h0a2.51,2.51,0,0,1,4.28,1.78V61.13a2.5,2.5,0,0,0,1.25,2.17L45,78.25a2.53,2.53,0,0,0,2.5,0l25.88-15a2.5,2.5,0,0,0,1.25-2.17V31.26a2.5,2.5,0,0,0-1.25-2.17L47.45,14.14a2.53,2.53,0,0,0-2.5,0l-17.23,10V2.51A2.51,2.51,0,0,1,30.23,0H51.49A33.42,33.42,0,0,1,75.12,9.79l3.74,3.74h0A46.19,46.19,0,0,1,92.39,46.18Z" />
+      <line class="cls-3" x1="27.72" y1="24.54" x2="27.72" y2="24.09" />
+    </g>
+  </g>
+</svg>

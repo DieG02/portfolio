@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/Mask_icon.svg';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {
