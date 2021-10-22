@@ -41,9 +41,9 @@
   box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.30);
   -webkit-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.30);
   -moz-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.30);
-  // &:hover {
-  //   box-shadow: none;
-  // }
+  &:hover {
+    box-shadow: none;
+  }
   .top {
     display: flex;
     position: relative;

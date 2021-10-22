@@ -20,9 +20,9 @@ export default function Projects() {
   const Card = () => (
     <div className='card'>
       <div className='top' onClick={flipCard}>
-        <img className='image' src='https://www.bypeople.com/wp-content/uploads/2016/10/psd-app-landing-page.jpg' alt='wheater_app' />
+        <img className='image' src='https://res.cloudinary.com/dte7upwcr/image/upload/v1617025711/blog/blog/landing-page-rd-station.jpg' alt='wheater_app' />
         <span>
-          icon
+          DB
           <a>
             <i class='fas fa-angle-right' />
           </a>
@@ -35,11 +35,6 @@ export default function Projects() {
         </p>
       </div>
       <div className='bottom'>
-
-        {/* <img src={Redux_Icon} alt='Redux Icon'/>
-              <img src={Redux_Icon} alt='Redux Icon'/>
-              <img src={Redux_Icon} alt='Redux Icon'/>
-              <img src={Redux_Icon} alt='Redux Icon'/> */}
         <img src={React_Icon} alt='React Icon' />
         <img src={React_Icon} alt='React Icon' />
         <img src={React_Icon} alt='React Icon' />

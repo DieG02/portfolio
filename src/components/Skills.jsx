@@ -3,7 +3,8 @@ import HtmlIcon from '../assets/icons/html.jsx';
 import JavascriptIcon from '../assets/icons/javascript.jsx';
 import ReactIcon from '../assets/icons/react.jsx';
 import NodeIcon from '../assets/icons/node.jsx';
-// import postgresql_icon from '../assets/icons/postgresql.svg';
+import PostgresqlIcon from '../assets/icons/postgresql.jsx';
+import ReduxIcon from '../assets/icons/redux.jsx';
 import '../styles/Skills.scss';
 
 export default function Skills() {
@@ -46,6 +47,14 @@ export default function Skills() {
               <li>
                 {/* <img src={node_icon} alt='node' /> */}
                 <NodeIcon height='90'/>
+              </li>
+              <li>
+                {/* <img src={node_icon} alt='node' /> */}
+                <PostgresqlIcon height='90'/>
+              </li>
+              <li>
+                {/* <img src={node_icon} alt='node' /> */}
+                <ReduxIcon height='90'/>
               </li>
             </ul>
           </div>
