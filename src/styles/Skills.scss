@@ -81,8 +81,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     height: 90px;
-    img {
-      height: 100%;
+    svg path, svg g{
+      fill: $primary;
     }
   }
   .back-skills {
