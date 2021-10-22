@@ -1,6 +1,8 @@
 import React from 'react';
 import React_Icon from '../assets/icons/react.svg';
 import HtmlIcon from '../assets/icons/html.jsx';
+import JavascriptIcon from '../assets/icons/javascript.jsx';
+import ReactIcon from '../assets/icons/react.jsx';
 import '../styles/Projects.scss';
 
 export default function Projects() {
@@ -19,11 +21,11 @@ export default function Projects() {
 
   const Card = () => (
     <div className='card'>
-      <div className='top' onClick={flipCard}>
+      <div className='top'>
         <img className='image' src='https://res.cloudinary.com/dte7upwcr/image/upload/v1617025711/blog/blog/landing-page-rd-station.jpg' alt='wheater_app' />
         <span>
           DB
-          <a>
+          <a onClick={flipCard}>
             <i class='fas fa-angle-right' />
           </a>
         </span>
@@ -35,11 +37,12 @@ export default function Projects() {
         </p>
       </div>
       <div className='bottom'>
-        <img src={React_Icon} alt='React Icon' />
-        <img src={React_Icon} alt='React Icon' />
-        <img src={React_Icon} alt='React Icon' />
+        <ReactIcon width='20px'/>
+        <JavascriptIcon width='20px'/>
         <HtmlIcon width='20px'/>
-          
+        <a href='https://github.com/DieG02' target='_blank' className='icon-container' rel='noopener noreferrer'>
+          <i className='fab fa-github icon' />
+        </a>
       </div>
     </div>
   )
