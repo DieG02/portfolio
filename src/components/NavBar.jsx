@@ -3,6 +3,9 @@ import MyLogo from '../assets/my_logo.jsx';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {
+  var windowWidth = window.innerWidth;
+  var windowHeight = window.innerHeight;
+  console.log(windowHeight, windowWidth);
   return (
     <header className='navbar'>
       <div className='logo'>

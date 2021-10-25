@@ -9,6 +9,7 @@ export default function Contact() {
     e.stopPropagation();
     [e.target[0], e.target[1], e.target[2]].map(element => {
       console.log(element.value)
+      return element.value;
     })
   }
 

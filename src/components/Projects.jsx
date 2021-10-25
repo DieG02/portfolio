@@ -1,5 +1,4 @@
 import React from 'react';
-import React_Icon from '../assets/icons/react.svg';
 import HtmlIcon from '../assets/icons/html.jsx';
 import JavascriptIcon from '../assets/icons/javascript.jsx';
 import ReactIcon from '../assets/icons/react.jsx';
@@ -13,11 +12,11 @@ export default function Projects() {
     alert('redirect to app');
   }
 
-  const redirect = e => {
-    e.preventDefault();
-    e.stopPropagation();
-    alert('redirect to gitHub')
-  }
+  // const redirect = e => {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   alert('redirect to gitHub')
+  // }
 
   const Card = () => (
     <div className='card'>
@@ -25,9 +24,9 @@ export default function Projects() {
         <img className='image' src='https://res.cloudinary.com/dte7upwcr/image/upload/v1617025711/blog/blog/landing-page-rd-station.jpg' alt='wheater_app' />
         <span>
           DB
-          <a onClick={flipCard}>
-            <i class='fas fa-angle-right' />
-          </a>
+          <div onClick={flipCard}>
+            <i className='fas fa-angle-right' />
+          </div>
         </span>
       </div>
       <div className='mid'>
