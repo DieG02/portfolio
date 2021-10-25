@@ -3,7 +3,7 @@ import React from "react";
 function NodeIcon({ width, height, color }) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg" 
+      xmlns="http://www.w3.org/2000/svg"
       width={width && width}
       height={height && height}
       viewBox="0 0 32 32"

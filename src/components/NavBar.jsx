@@ -1,12 +1,12 @@
 import React from 'react';
-import Logo from '../assets/Mask_icon.svg';
+import MyLogo from '../assets/my_logo.jsx';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {
   return (
     <header className='navbar'>
       <div className='logo'>
-        <img src={Logo} alt='logo_portfolio'/>
+        <MyLogo width='35' />
         <p>
           <span>DB</span> 
           portfolio
@@ -31,14 +31,6 @@ export default function NavBar () {
           </li>
         </ul>
       </nav>
-      {/* <div className='icons'>
-        <a href='https://github.com/DieG02' target='_blank'>
-          <GitHub/>
-        </a>
-        <a href='https://www.linkedin.com/in/diegobautista02' target='_blank'>
-          <LinkedIn/>
-        </a>
-      </div> */}
     </header>
   )
 }

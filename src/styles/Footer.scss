@@ -1,7 +1,19 @@
 @import './App.scss';
 
 .footer {
-  position: relative;
-  top: 0;
+  @include spacing('px', 70px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: $dark;
+  height: 80px;
+  position: relative;
+  bottom: 0;
+  a {
+    color: $primary;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
