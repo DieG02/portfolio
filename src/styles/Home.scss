@@ -9,7 +9,8 @@
   background-image: url('../assets/bg/home.svg');
   background-repeat: no-repeat;
   background-position: 100% 0px;
-  background-size: 90vh;
+  background-size: 80vh;
+  
   // background: linear-gradient(90deg, $primary 0%, $primary, 70%, $dark 30%, $dark 100%);
 }
 
@@ -52,16 +53,6 @@
     div img {
       border-radius: 0 1.5em;
       margin-right: 1.5em;
-    }
-  }
-
-  .cover {
-    flex: 1;
-    // background-color: $dark;
-    img {
-      width: calc(100% + 70px);
-      height: 100%;
-      object-fit: contain;
     }
   }
 }

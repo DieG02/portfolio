@@ -15,7 +15,7 @@ export default function NavBar () {
           portfolio
         </p>
       </div>
-      <nav style={{ position: 'relative', right: '-20px' }}>
+      <nav>
         <ul>
           <li>
             <a href='#home'>Inicio</a>

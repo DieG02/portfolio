@@ -30,29 +30,17 @@ $navBarHeight: 60px;
     display: flex;
     align-items: center;
   }
+  ul {
+    gap: 2em;
+  }
   ul li {
     display: inherit;
     // text-transform: uppercase;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 20px;
     font-weight: 500;
     a:hover {
       color: $primary
     }
-  }
-
-  .icons {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content: space-between;
-    width: 65px;
-    a {
-      width: 1.4em; 
-      height: 1.4em;
-      color: greenyellow;
-    }
-  }
-  
+  }  
 }
