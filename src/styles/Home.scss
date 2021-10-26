@@ -3,19 +3,26 @@
 #home {
   @include navBarHeight();
   @include spacing('px', 70px);
-  background-color: $grey;
   height: 100vh;
   background: $dark;
-  background-image: url('../assets/bg/home.svg');
-  background-repeat: no-repeat;
-  background-position: 101% -5px;
-  background-size: 75vh;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    background-image: url('../assets/bg/home.svg');
+    background-repeat: no-repeat;
+    background-position: 101% -5px;
+    background-size: 70vh;
+  }
 }
 
 .home {
   display: flex;
   height: 100%;
-  max-width: 1300px;
+  max-width: $max-width;
   margin: 0 auto;
   .content {
     flex: 1;

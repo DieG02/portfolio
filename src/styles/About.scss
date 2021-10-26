@@ -3,12 +3,26 @@
 #about {
   @include navBarHeight();
   @include spacing('px', 70px);
-  background-color: $grey;
+  background: transparent;
   background-image: url('../assets/bg/about.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: fill;
   background-position: bottom;
   height: 100vh;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    background-image: url('../assets/bg/home.svg');
+    background-repeat: no-repeat;
+    background-position: 101% calc(-100vh - 5px);
+    background-size: 70vh;
+  }
 }
 
 .about {
@@ -16,6 +30,8 @@
   grid-template-rows: 1fr 1fr;
   align-items: center;
   max-height: 75%;
+  max-width: $max-width;
+  margin: 0 auto;
   h2 {
     color: $dark;
     margin-bottom: 2em;
