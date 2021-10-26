@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import NavBar from './views/NavBar';
+import Home from './views/Home';
+import About from './views/About';
+import Skills from './views/Skills';
+import Projects from './views/Projects';
+import Contact from './views/Contact';
+import Footer from './views/Footer';
 import './styles/App.scss';
 
 function App() {
