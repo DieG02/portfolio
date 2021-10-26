@@ -1,5 +1,5 @@
 import React from 'react';
-import redux from '../assets/icons/redux.svg';
+import Logo from '../assets/my_logo';
 import '../styles/Contact.scss';
 
 export default function Contact() {
@@ -13,18 +13,13 @@ export default function Contact() {
     })
   }
 
-  if(!false) return null;
-
   return (
     <section id='contact'>
       <div className='contact'>
         <div className='bar-side'>
-          <img src={redux} width='150px' alt='form_icon'/>
+          <Logo width='75%' color='#FAFAFA' />
         </div>
         <form name='contact-form' onSubmit={handleSubmit} className='form-side'>
-          <label className='times'>
-            <i class="fas fa-times"/>
-          </label>
           <div>
             <div name='fullName'>
               <span>Nombre y Apellido</span>

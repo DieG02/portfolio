@@ -1,24 +1,13 @@
 @import './App.scss';
 
 #contact {
-  position: fixed;
-  z-index: 10;
+  @include spacing('px', 70px);
+  position: relative;
   top: 0;
   left: 0;
   display: flex;
   width: 100vw;
   height: 100vh;
-  &::before {
-    z-index: -1;
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(50,50,50,0.5);
-    backdrop-filter: blur(10px);
-  }
 }
 
 .contact {
@@ -37,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $gradient1;
+    background: $gradient2;
     // background: $gradient2;
     border-radius: 25px 0 0 25px;
   }
@@ -76,6 +65,7 @@
     [name=fullName],
     [name=email],
     [name=message] {
+      margin-top: 1em;
       span {
         font-size: 0.7em;
         margin-bottom: 0.5em;
@@ -93,6 +83,7 @@
       }
       textarea {
         flex: 1;
+        resize: none;
       }
     }
     [name=button] {
