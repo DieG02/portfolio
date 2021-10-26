@@ -21,7 +21,7 @@
     grid-template-columns: 1fr;
     .items {
       position: absolute;
-      color: $black;
+      color: #444;
       cursor: default;
       &:hover {
         color: $primary; 
@@ -51,7 +51,7 @@
     }
     .front2 {
       left: 50%; 
-      font-size: 0.9em;
+      font-size: 1.3em;
     }
     .front3 {
       right: 30%;
@@ -106,6 +106,12 @@
       top: 30%;
       right: 15%;
       font-size: 1.2em;
+      font-weight: 600;
+    }
+    .back4 {
+      bottom: 5%;
+      right:  5%;
+      font-size: 1.3em;
       font-weight: 600;
     }
   }

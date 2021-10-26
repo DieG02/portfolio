@@ -11,20 +11,10 @@ export default function NavBar () {
     const element = document.getElementsByClassName('navbar');
     if (window.pageYOffset > 50) {
       element[0].classList.add('solid');
-      console.log('solid')
     } else {
       element[0].classList.remove('solid');
-      console.log('default');
     }
-    // element.classList.add('change');
-    
   }
-  
-  // window.scroll = function (e) {
-  //   const scrollTop = window.scrollTop();
-  //   console.log(scrollTop)
-
-  // };
 
   return (
     <header className='navbar'>

@@ -3,19 +3,18 @@ import HtmlIcon from '../assets/icons/html.jsx';
 import JavascriptIcon from '../assets/icons/javascript.jsx';
 import ReactIcon from '../assets/icons/react.jsx';
 import NodeIcon from '../assets/icons/node.jsx';
-import PostgresqlIcon from '../assets/icons/postgresql.jsx';
-import ReduxIcon from '../assets/icons/redux.jsx';
 import '../styles/Skills.scss';
 
 export default function Skills() {
   const skills = {
     front: [
-      'CSS', 'React\nNative', 'Redux', 'Expo', 'Sass',
+      'CSS', 'React\nNative',
+      'Redux', 'Expo', 'Sass',
       'Bootstrap', 'Figma'
     ],
     back: [
       'Express', 'Firebase',
-      'PostgreSQL', 'Sequelize'
+      'PostgreSQL', 'Sequelize',  'GitHub',
     ]
   }
 
@@ -33,28 +32,16 @@ export default function Skills() {
           <div className='main-skills'>
             <ul>
               <li>
-                {/* <img src={html_icon} alt='html'  color='#ff5e62' /> */}
                 <HtmlIcon height='90' />
               </li>
               <li>
-                {/* <img src={javascript_icon} alt='javascript' /> */}
-                <JavascriptIcon height='90' />
+                <JavascriptIcon height='90'/>
               </li>
               <li>
-                {/* <img src={react_icon} alt='react' /> */}
                 <ReactIcon height='90'/>
               </li>
               <li>
-                {/* <img src={node_icon} alt='node' /> */}
                 <NodeIcon height='90'/>
-              </li>
-              <li>
-                {/* <img src={node_icon} alt='node' /> */}
-                <PostgresqlIcon height='90'/>
-              </li>
-              <li>
-                {/* <img src={node_icon} alt='node' /> */}
-                <ReduxIcon height='90'/>
               </li>
             </ul>
           </div>
@@ -69,23 +56,3 @@ export default function Skills() {
     </section>
   )
 }
-
-
-/*
-
-  <ul>
-            <li>
-              <img src={html_icon} alt='html' />
-            </li>
-            <li>
-              <img src={javascript_icon} alt='javascript' />
-            </li>
-            <li>
-                <img src={react_icon} alt='react' />
-            </li>
-            <li>
-              <img src={node_icon} alt='node' />
-            </li>
-          </ul>
-
-*/
