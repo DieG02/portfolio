@@ -18,8 +18,7 @@ export default function Home () {
             <a href='https://api.whatsapp.com/send?phone=541124780505' target='_blank' className='icon-container' rel='noopener noreferrer'>
               <i className='fab fa-whatsapp icon' />
             </a>
-            {/* <a href='mailto:diegobautista2002@gmail.com' target='_blank' className='icon-container' rel='noopener noreferrer'> */}
-            <a href='#home' className='icon-container'  >
+            <a href='mailto:diegobautista2002@gmail.com' target='_blank' className='icon-container' rel='noopener noreferrer'>
               <i className='far fa-envelope icon' />
             </a>
           </div>

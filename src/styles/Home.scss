@@ -2,24 +2,23 @@
 
 #home {
   @include navBarHeight();
-  @include spacing('px', 100px);
+  @include spacing('px', 70px);
   background-color: $grey;
   height: 100vh;
   background: $dark;
   background-image: url('../assets/bg/home.svg');
   background-repeat: no-repeat;
-  background-position: 100% 0px;
-  background-size: 80vh;
-  
-  // background: linear-gradient(90deg, $primary 0%, $primary, 70%, $dark 30%, $dark 100%);
+  background-position: 101% -5px;
+  background-size: 75vh;
 }
 
 .home {
   display: flex;
   height: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   .content {
     flex: 1;
-    // background-color: $primary;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

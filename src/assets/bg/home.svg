@@ -1,10 +1,46 @@
-<svg width="725" height="1100" viewBox="0 0 725 990" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="663.973" y="-454" width="1270.03" height="939" rx="15" transform="rotate(45 663.973 -454)" fill="url(#paint0_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="663.973" y1="-454" x2="1559.63" y2="757.412" gradientUnits="userSpaceOnUse">
-<stop stop-color="#ff5e62"/>
-<!-- <stop offset="1" stop-color="#6A98F0"/> -->
-<stop offset="1" stop-color="#ff2e45"/>
-</linearGradient>
-</defs>
+<svg width="319" height="534" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden">
+  <defs>
+    <clipPath id="clip0">
+      <rect x="797" y="156" width="319" height="534" />
+    </clipPath>
+    <clipPath id="clip1">
+      <rect x="797" y="157" width="318" height="533" />
+    </clipPath>
+    <clipPath id="clip2">
+      <rect x="797" y="157" width="318" height="534" />
+    </clipPath>
+    <clipPath id="clip3">
+      <path d="M827.634 87.3924 1208.12 151.888 1116.91 689.105 736.425 624.609Z" fill-rule="evenodd" clip-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip4">
+      <path d="M827.634 87.3924 1208.12 151.888 1116.91 689.105 736.425 624.609Z" fill-rule="evenodd" clip-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip5">
+      <path d="M849.404-40.8231 1514.38 71.8964 1401.4 737.329 736.425 624.609Z" fill-rule="evenodd" clip-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip6">
+      <path d="M849.404-40.8231 1514.38 71.8964 1401.4 737.329 736.425 624.609Z" />
+    </clipPath>
+    <linearGradient x1="638.149" y1="25.6065" x2="945.773" y2="559.085" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="fill7">
+      <stop offset="0" stop-color="#FF5E62" />
+      <stop offset="0.1" stop-color="#FF5E62" />
+      <stop offset="0.76" stop-color="#FF394C" />
+      <stop offset="1" stop-color="#FF394C" />
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#clip0)" transform="translate(-797 -156)">
+    <g clip-path="url(#clip1)">
+      <g clip-path="url(#clip2)">
+        <g clip-path="url(#clip3)">
+          <g clip-path="url(#clip4)">
+            <g clip-path="url(#clip5)">
+              <g clip-path="url(#clip6)">
+                <path d="M759.293-40.7655C763.849-45.3164 771.231-45.3124 775.782-40.7567L1125.04 308.882C1129.59 313.438 1129.59 320.821 1125.03 325.371L824.632 625.457C820.076 630.008 812.693 630.004 808.143 625.448L458.877 275.81C454.326 271.254 454.33 263.872 458.886 259.321Z" fill="url(#fill7)" fill-rule="evenodd" transform="matrix(0.986679 0.16725 -0.167386 0.985892 392.962 -72.5546)" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>
