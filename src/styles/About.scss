@@ -10,19 +10,6 @@
   background-position: bottom;
   height: 100vh;
   position: relative;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    background-image: url('../assets/bg/home.svg');
-    background-repeat: no-repeat;
-    background-position: 101% calc(-100vh - 5px);
-    background-size: 70vh;
-  }
 }
 
 .about {

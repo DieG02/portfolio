@@ -7,7 +7,7 @@ export default function Home () {
       <div className='home'>
         <div className='content'>
           <div>
-            <h1 className='title'>Diego Bautista</h1>
+            <h1>Diego Bautista</h1>
             <h3>Frontend Developer</h3>
             <a href='https://www.linkedin.com/in/diegobautista02' target='_blank' className='icon-container' rel='noopener noreferrer'>
               <i className='fab fa-linkedin-in icon' />
