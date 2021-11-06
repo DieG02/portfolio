@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/my_logo';
+import Shaking_hands from '../assets/icons/shaking_hands.jsx'
 import '../styles/Contact.scss';
 
 export default function Contact() {
@@ -17,7 +18,7 @@ export default function Contact() {
     <section id='contact'>
       <div className='contact'>
         <div className='bar-side'>
-          <Logo width='75%' color='#FAFAFA' />
+          <Shaking_hands width='70%' color='#FAFAFA' />
         </div>
         <form name='contact-form' onSubmit={handleSubmit} className='form-side'>
           <div>

@@ -49,7 +49,7 @@ export default function Projects() {
   return (
     <section id='projects'>
       <div className='projects'>
-        <h1 className='title'>Mis Proyectos</h1>
+        <h2 className='subtitle'>Mis Proyectos</h2>
         <div className='content'>
           <Card/>
           <Card/>
