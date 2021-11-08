@@ -36,8 +36,8 @@
       position: relative;
 
       &:first-of-type img{
-        background-color: #555;
-        box-shadow: none;
+background: rgb(102,102,102);
+background: radial-gradient(circle, rgba(102,102,102,1) 0%, rgba(68,68,68,1) 21%, rgba(47,47,47,1) 50%, rgba(34,34,34,1) 70%, rgba(16,16,16,1) 95%, rgba(0,0,0,1) 100%);        box-shadow: none;
       }
       img {
         width: 8em;
@@ -49,9 +49,9 @@
         left: calc(50% - 4em);
         margin: 0;
         
-        -webkit-box-shadow: 2px 2px 3px 0px $black;
-        -moz-box-shadow: 2px 2px 3px 0px $black;
-        box-shadow: 2px 2px 3px 0px $black;
+        -webkit-box-shadow: 2px 2px 3px 0px rgba(68,68,68,1);
+        -moz-box-shadow: 2px 2px 3px 0px rgba(68,68,68,1);
+        box-shadow: 2px 2px 3px 0px rgba(68,68,68,1);
       };
       
       h3 {
