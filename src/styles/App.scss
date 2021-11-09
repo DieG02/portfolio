@@ -47,9 +47,8 @@ $smallScreen: 768px;
 .App {
   background-color: $grey;
   margin: 0;
+  position: relative;
   & > * {
-    position: relative;
-    width: 100%;
     box-sizing: border-box;
   }
 }
