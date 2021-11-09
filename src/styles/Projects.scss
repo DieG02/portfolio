@@ -3,11 +3,10 @@
 #projects {
   @include navBarHeight();
   @include spacing('px', 70px);
-  background-color: $grey;
+  background-color: transparent;
   background-image: url('../assets/bg/projects.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0px -3px;
   height: 100vh;
   display: flex;
   align-items: center;
