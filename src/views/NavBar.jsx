@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MyLogo from '../assets/my_logo.jsx';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {
-  var windowWidth = window.innerWidth;
-  var windowHeight = window.innerHeight;
-  console.log(windowHeight, windowWidth);
   
   window.onscroll = function () {
     const element = document.getElementsByClassName('navbar');
-    if (window.pageYOffset > 50) {
+    if (window.pageYOffset > 0) {
       element[0].classList.add('solid');
     } else {
       element[0].classList.remove('solid');
     }
+  }
+
+  const [menu, showMenu] = useState(false);
+  const toogle = () => {
+    showMenu(!menu);
+    const element = document.querySelector('.navbar nav ul');
+    menu 
+      ? element.classList.remove('full')
+      : element.classList.add('full');
+    console.log(element);
   }
 
   return (
@@ -26,23 +33,29 @@ export default function NavBar () {
         </p>
       </div>
       <nav>
-        <ul>
+        <ul className='full'>
           <li>
-            <a href='#home'>Inicio</a>
+            <a onClick={toogle} href='#home'>Inicio</a>
           </li>
           <li>
-            <a href='#about'>Sobre mi</a>
+            <a onClick={toogle} href='#about'>Sobre mi</a>
           </li>
           <li>
-            <a href='#skills'>Skills</a>
+            <a onClick={toogle} href='#skills'>Skills</a>
           </li>
           <li>
-            <a href='#projects'>Proyectos</a>
+            <a onClick={toogle} href='#projects'>Proyectos</a>
           </li>
           <li>
-            <a href='#contact'>Contacto</a>
+            <a onClick={toogle} href='#contact'>Contacto</a>
           </li>
         </ul>
+        <div className='menu-btn' onClick={toogle}>
+          {menu
+            ? <i class='fas fa-times'/>
+            : <i class='fas fa-bars'/>
+          }          
+        </div>
       </nav>
     </header>
   )

@@ -3,12 +3,13 @@ $navBarHeight: 60px;
 
 .navbar {
   @include spacing('px', 70px);
-  height: $navBarHeight;
+  height: 80px;
   position: fixed;
   z-index: 5;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   background: transparent;
 
@@ -49,12 +50,16 @@ $navBarHeight: 60px;
       }
     }
   }  
+
+  .menu-btn {
+    display: none;
+  }
 }
 
 .navbar.solid {
   background: $dark;
-  transition: 0.5s;
-  
+  transition: 0.3s;
+  height: $navBarHeight;
   .logo {
     svg g {
       fill: $primary
@@ -71,3 +76,37 @@ $navBarHeight: 60px;
   }
 }
 
+
+@media (max-width: 900px) { 
+  .navbar {
+    background-color: red;
+    .menu-btn {
+      display: flex;
+      font-size: 1.6rem;
+      width: 30px;
+      justify-content: center;
+      z-index: 10;
+    }
+    nav {
+      ul {
+        display: none;
+      }
+      ul.full {
+        position: absolute;
+        background-color: $dark;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        @include spacing('py', 90px);
+        align-items: center;
+        li {
+          font-size: 1.5em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
