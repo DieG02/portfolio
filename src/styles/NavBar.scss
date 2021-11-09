@@ -78,9 +78,9 @@ $navBarHeight: 60px;
 }
 
 
-@media (max-width: 900px) { 
+@media (max-width: $mediumScreen) { 
   .navbar {
-    @include spacing('px', 1.5rem);
+    @include spacing('px', 1rem);
     .menu-btn {
       display: flex;
       font-size: 1.6rem;
