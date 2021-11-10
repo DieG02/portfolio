@@ -64,3 +64,24 @@
     }
   }
 }
+
+@media (max-width: $mediumScreen) { 
+  #home {
+    @include spacing('px', 1rem);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-position: 100% -5px;
+    background-size: 70vh;
+  }
+  .home {
+    .content {
+      h1 {
+        font-size: 2.3rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

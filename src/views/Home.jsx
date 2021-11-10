@@ -22,20 +22,7 @@ export default function Home () {
               <i className='far fa-envelope icon' />
             </a>
           </div>
-          <div>
-            <h4>Últimos proyectos</h4>
-            <img
-              src='https://www.40defiebre.com/wp-content/uploads/2014/12/landing.png'
-              alt='project_1'
-              width='230px'
-            />
-            <img
-              src='https://www.mister.com.py/uploads/2021/06/mac_que_es_una_landing_page_o_pagina_de_aterrizaje_1544133467.png'
-              alt='proyect_2'
-              width='230px'
-              height='135px'
-            />
-          </div>
+        
         </div>
 
         {/* <div className='cover'>

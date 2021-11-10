@@ -113,3 +113,13 @@ $navBarHeight: 60px;
     }
   }
 }
+
+@media (max-width: $smallScreen) {
+  .navbar {
+    .logo {
+      svg g {
+        fill: $light;
+      }
+    }
+  }
+}
