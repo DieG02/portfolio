@@ -4,14 +4,20 @@
   @include navBarHeight();
   @include spacing('px', 70px);
   background-color: $dark;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .skills {
-  height: 100%;
   display: grid;
   grid-template-rows: 1fr 4fr;
   align-items: center;
+  width: 100%;
+  
+  h2 {
+    margin-bottom: 1.5em;
+  }
   .content {
     position: relative;
     height: 90%;
@@ -81,6 +87,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     height: 90px;
+    gap: 1.5rem;
     svg path, svg g{
       fill: $primary;
     }
@@ -115,12 +122,33 @@
       font-weight: 600;
     }
   }
+}
 
-  @media screen and (max-width: $mediumScreen) {
-    .front-skills, 
-    .back-skills {
-      visibility: hidden;
-    }
+@media screen and (max-width: $mediumScreen) {
+  #skills {
+    @include spacing('px', 1em);
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  .front-skills, 
+  .back-skills {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: $smallScreen) {
+  .skills {
+    .main-skills ul {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      margin-bottom: 1.5rem;
+      gap: 1.5rem;
+      li svg {
+        height: 8rem;
+      }
+    } 
   }
 }
 
