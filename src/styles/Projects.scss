@@ -14,12 +14,11 @@
 
 .projects {
   width: 100%;
-  // background: green;
   display: flex;
   align-items: center;
   flex-direction: column;
   h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
     color: $dark;
   }
   .content {
@@ -32,7 +31,7 @@
 
 .projects .card {
   width: 300px;
-  max-width: 500px;
+  max-width: 450px;
   background: white;
   border-radius: 15px;
   display: flex;

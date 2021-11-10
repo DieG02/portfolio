@@ -22,22 +22,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    .icon-container {
-      position: relative;
-      top: 20px;
-      font-size: 1.5em;
-      .icon {
-        text-align: center;
-        color: $light;
-        font-size: 1em;
-        &:hover {
-          color: $primary;
+    .icons {
+      display: flex;
+      margin-top: 1.5rem;
+      gap: 1.5rem;
+      .icon-container {
+        font-size: 1.5rem;
+        .icon {
+          text-align: center;
+          color: $light;
+          font-size: 1em;
+          &:hover {
+            color: $primary;
+          }
         }
       }
-      &::after {
-        content: '';
-        margin-right: 1em;
-      };
     }
     h1 {
       font-size: 3.5rem;
@@ -65,22 +64,35 @@
   }
 }
 
-@media (max-width: $mediumScreen) { 
+@media (max-width: $mediumScreen) and (orientation: portrait){ 
   #home {
     @include spacing('px', 1rem);
-    align-items: center;
-    display: flex;
-    justify-content: center;
     background-position: 100% -5px;
     background-size: 70vh;
+  }
+}
+
+@media (max-width: $smallScreen) and (orientation: portrait),
+(min-width: $smallScreen) and (max-width: 860px) and (orientation: landscape) {
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .home {
     .content {
       h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
       }
       h3 {
         font-size: 1.3rem;
+      }
+      .icons {
+        margin-top: 2rem;
+        justify-content: center;
+      }
+      .data {
+        display: none;
       }
     }
   }

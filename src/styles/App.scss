@@ -9,7 +9,7 @@ $gradient1: -webkit-linear-gradient(135deg, $primary, $blue);
 $gradient2: -webkit-linear-gradient(-45deg, $primary 20%, $secondary);
 $shadown: 3px 3px 6px 1px rgba(0,0,0,0.35);
 $mediumScreen: 1024px;
-$smallScreen: 768px;
+$smallScreen: 480px;
 
 //Mixin
 @mixin center-container {
@@ -61,6 +61,12 @@ $smallScreen: 768px;
   margin: 0;
   white-space: nowrap;
   color: $light;
+  @media (max-width: $mediumScreen) {
+    font-size: 2.5rem;
+  } 
+  @media (max-width: $smallScreen) {
+    font-size: 2rem;
+  } 
 }
 
 
