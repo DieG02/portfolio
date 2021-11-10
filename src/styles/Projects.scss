@@ -7,7 +7,7 @@
   background-image: url('../assets/bg/projects.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -107,5 +107,24 @@
         margin: 0 0.6em;
       }
     }
+  }
+}
+
+
+@media (max-width: $mediumScreen) { 
+  #projects {
+    @include spacing('px', 1em);
+  }
+  .projects {
+    .content {
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .projects .card {
+    width: 100%;
   }
 }
