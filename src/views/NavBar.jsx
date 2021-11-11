@@ -13,7 +13,7 @@ export default function NavBar () {
     }
   }
 
-  const [menu, showMenu] = useState(false);
+  const [menu, showMenu] = useState(true);
   const toogle = () => {
     showMenu(!menu);
     const element = document.querySelector('.navbar nav ul');

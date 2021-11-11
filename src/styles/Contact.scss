@@ -7,9 +7,9 @@
   top: 0;
   left: 0;
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: $black;
+  box-sizing: border-box;
 }
 
 .contact {
@@ -17,20 +17,22 @@
   max-width: 1060px;
   width: 90%;
   max-height: 800px;
+  min-height: 475px;
   height: 80%;
-  border-radius: 25px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+  position: relative;
+  box-sizing: border-box;
   .bar-side {
     display: flex;
     height: 90%;
     top: 5%;
-    position: relative;
     align-items: center;
     justify-content: center;
     background: $gradient2;
     border-radius: 20px 0 0 20px;
+    position: relative;
   }
   .form-side {
     display: flex;
@@ -38,30 +40,26 @@
     border-radius: 25px;
     flex-direction: column;
     padding: 2em;
-    .times {
-      margin-left: auto;
-      position: relative;
-      top: -0.5em;
-    }
-    >div {
+    box-sizing: border-box;
+    position: relative;
+    > div:first-of-type {
       display: flex;
       flex: 3;
+      gap: 1.5rem;
     }
     [name=fullName] {
       display: flex;
       flex: 1;
       flex-direction: column;
-      margin-right: 1em;
     }
     [name=email] {
       display: flex;
-      flex: 1.2;
+      flex: 1.1;
       flex-direction: column;
-      margin-left: 1em;
     }
     [name=message] {
       display: flex;
-      flex: 9;
+      flex: 7;
       flex-direction: column;
     }
     [name=fullName],
@@ -70,7 +68,7 @@
       margin-top: 1em;
       span {
         font-size: 0.7em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5rem;
       }
       input, textarea {
         border: none;
@@ -115,5 +113,56 @@
       }
     }
     
+  }
+}
+
+
+@media screen and (max-width: $mediumScreen) {
+  #contact {
+    @include spacing('px', 1em);
+  }
+  .contact {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    .bar-side {
+      width: 90%;
+      height: 100px;
+      display: flex;
+      align-self: center;
+      border-radius: 20px 20px 0 0;
+      position: absolute;
+      top: -5%;
+      svg {
+        display: none;
+      }
+    }
+    .form-side {
+      width: 100%;
+      display: flex;
+      padding: 1.5em 1em;
+      top: 0; 
+      > div:first-of-type {
+        flex-direction: column;
+        flex: 1;
+        gap: 1rem;
+        div {
+          margin: 0;
+        }
+      }
+        #message {
+          min-height: 100px;
+        }
+      [name=button] {
+        margin-top: 1em;
+      } 
+    }
   }
 }

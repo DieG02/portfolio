@@ -24,11 +24,11 @@ export default function Contact() {
           <div>
             <div name='fullName'>
               <span>Nombre y Apellido</span>
-              <input type='text' placeholder='Ej. Nombre Usuario'/>
+              <input type='text' placeholder='Nombre completo'/>
             </div>
             <div name='email'>
               <span>Email</span>
-              <input type='email' placeholder='Ej. nombreusuario@gmail.com'/>
+              <input type='email' placeholder='Ingrese su email'/>
             </div>
           </div>
 
