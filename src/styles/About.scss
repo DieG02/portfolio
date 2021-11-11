@@ -73,7 +73,7 @@
 
 @media (max-width: $mediumScreen) { 
   #about {
-    @include spacing('px', 1rem);
+    @include spacing('px', 1.5rem);
   }
   .about {
     .content {

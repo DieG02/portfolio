@@ -119,7 +119,7 @@
 
 @media screen and (max-width: $mediumScreen) {
   #contact {
-    @include spacing('px', 1em);
+    @include spacing('px', 1.5rem);
   }
   .contact {
     min-height: 400px;

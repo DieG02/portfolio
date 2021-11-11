@@ -112,7 +112,7 @@
 
 @media (max-width: $mediumScreen) { 
   #projects {
-    @include spacing('px', 1em);
+    @include spacing('px', 1.5rem);
   }
   .projects {
     .content {

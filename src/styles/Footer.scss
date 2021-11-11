@@ -21,7 +21,7 @@
 @media (max-width: $smallScreen) and (orientation: portrait),
 (min-width: $smallScreen) and (max-width: 860px) and (orientation: landscape) {
   .footer {
-    @include spacing('px', 1rem);
+    @include spacing('px', 1.5rem);
     span {
       width: 80%;
       font-size: 0.8rem;
