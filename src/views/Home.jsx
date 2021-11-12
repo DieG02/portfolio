@@ -8,7 +8,7 @@ export default function Home () {
         <div className='content'>
           <div>
             <h1>Diego Bautista</h1>
-            <h3>Frontend Developer</h3>
+            <h3>Full Stack Developer</h3>
             <div className='icons'>
               <a href='https://www.linkedin.com/in/diegobautista02' target='_blank' className='icon-container' rel='noopener noreferrer'>
                 <i className='fab fa-linkedin-in icon' />
@@ -16,9 +16,9 @@ export default function Home () {
               <a href='https://github.com/DieG02' target='_blank' className='icon-container' rel='noopener noreferrer'>
                 <i className='fab fa-github icon' />
               </a>
-              <a href='https://api.whatsapp.com/send?phone=541124780505' target='_blank' className='icon-container' rel='noopener noreferrer'>
+              {/* <a href='https://api.whatsapp.com/send?phone=541124780505' target='_blank' className='icon-container' rel='noopener noreferrer'>
                 <i className='fab fa-whatsapp icon' />
-              </a>
+              </a> */}
               <a href='mailto:diegobautista2002@gmail.com' target='_blank' className='icon-container' rel='noopener noreferrer'>
                 <i className='far fa-envelope icon' />
               </a>

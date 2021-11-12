@@ -16,7 +16,7 @@
   width: 100%;
   
   h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
   }
   .content {
     position: relative;
@@ -31,7 +31,7 @@
       cursor: default;
       &:hover {
         color: $primary; 
-        background: $gradient1;
+        background: $gradient2;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -131,6 +131,9 @@
   .skills {
     display: flex;
     flex-direction: column;
+    h2 {
+      margin-bottom: 1em;
+    }
   }
   .front-skills, 
   .back-skills {
@@ -139,6 +142,9 @@
 }
 @media screen and (max-width: $smallScreen) {
   .skills {
+    h2 {
+      margin-bottom: 1.5em;
+    }
     .main-skills ul {
       flex-direction: column;
       align-items: center;

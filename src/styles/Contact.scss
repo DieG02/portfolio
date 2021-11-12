@@ -91,24 +91,23 @@
       margin-left: auto;
       display: flex;
       input {
-        width: 100px;
+        width: 8rem;
         height: 40px;
         position: relative;
         align-self: flex-end;
         cursor: pointer;
-        border: none;
-        border-radius: 0.5em;
-        background: $primary;
-        color: $light;
+        border: 2px $primary solid;
+        border-radius: 0.5rem;
+        background: transparent;
         font-family: 'Poppins', sans-serif;
         font-size: 14px;
         bottom: 0;
         right: 0;
+        color: $primary;
         &:hover {
           transition: 0.3s;
-          background: $secondary;
-          bottom: -2px;
-          right: -1px;
+          background: $primary;
+          color: $light;
         }
       }
     }
@@ -157,11 +156,17 @@
           margin: 0;
         }
       }
-        #message {
-          min-height: 100px;
-        }
+      #message {
+        min-height: 100px;
+      }
       [name=button] {
+        margin: 0 auto;
         margin-top: 1em;
+        width: 50%;
+        input {
+          border-radius: 1.5rem;
+          width: 100%;
+        }
       } 
     }
   }

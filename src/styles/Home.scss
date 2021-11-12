@@ -90,6 +90,11 @@
       .icons {
         margin-top: 2rem;
         justify-content: center;
+        .icon-container .icon {
+          &:hover {
+            color: $dark;
+          }
+        }
       }
       .data {
         display: none;
