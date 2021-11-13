@@ -1,59 +1,42 @@
 import React from 'react';
-import HtmlIcon from '../assets/icons/html.jsx';
-import JavascriptIcon from '../assets/icons/javascript.jsx';
-import ReactIcon from '../assets/icons/react.jsx';
+import Card from '../components/ProjectCard';
 import '../styles/Projects.scss';
 
 export default function Projects() {
 
-  const flipCard = e => {
-    // e.preventDefault();
-    // e.stopPropagation();
-    alert('redirect to app');
-  }
-
-  // const redirect = e => {
-  //   e.preventDefault();
-  //   e.stopPropagation();
-  //   alert('redirect to gitHub')
-  // }
-
-  const Card = () => (
-    <div className='card'>
-      <div className='top'>
-        <img className='image' src='https://res.cloudinary.com/dte7upwcr/image/upload/v1617025711/blog/blog/landing-page-rd-station.jpg' alt='wheater_app' />
-        <span>
-          DB
-          <div onClick={flipCard}>
-            <i className='fas fa-angle-right' />
-          </div>
-        </span>
-      </div>
-      <div className='mid'>
-        <h3>WeatHer App</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, ultricies at pretium at, bibendum vitae justo.
-        </p>
-      </div>
-      <div className='bottom'>
-        <ReactIcon width='20px'/>
-        <JavascriptIcon width='20px'/>
-        <HtmlIcon width='20px'/>
-        <a href='https://github.com/DieG02' target='_blank' className='icon-container' rel='noopener noreferrer'>
-          <i className='fab fa-github icon' />
-        </a>
-      </div>
-    </div>
-  )
-
+ 
   return (
     <section id='projects'>
       <div className='projects'>
         <h2 className='subtitle'>Mis Proyectos</h2>
         <div className='content'>
-          <Card/>
-          <Card/>
-          <Card/>
+          <Card 
+            image='https://eduardoduque.com/wp-content/uploads/2016/01/Spotify.jpg'
+            title='Fany' 
+            deploy={false} 
+            github='https://github.com/DieG02/RN-Fany'
+            stack={['react', 'firebase', 'sass']}
+          >
+            Fany consiste en un reproductor de musica en streamming al puro estilo de spotify combinada con la amplia variedad de youtube, sumandole el plus sin anuncios
+          </Card>
+          <Card
+            image='https://i.ibb.co/KKQ0c4C/Bilder-landing.png'
+            title='Bilder'
+            deploy='https://bilder-landing-page.vercel.app/'
+            github='https://github.com/DieG02/Bilder-Admin'
+            stack={['react', 'node', 'bootstrap']}
+          >
+            Bilder surgió con la idea de facilitar el proceso de compra para las pequeñas y medianas empresas, con el fin de ofrecer un mejor precio al consumidor final.
+          </Card>
+          <Card
+            image='https://i.ibb.co/hDLbqdV/Uala-landing.png'
+            title='Henry Bank'
+            deploy={false}
+            github='https://github.com/DieG02/Fintech'
+            stack={['react', 'node', 'js', 'psql', 'reudx']}
+          >
+            Henry Bank fue mi proyecto final del Bootcamp Henry, en el terminamos de consolidar todos los conocimientos adquiridos en el curso, empleando las mejores prácticas.
+          </Card>
         </div>
       </div>
     </section>
