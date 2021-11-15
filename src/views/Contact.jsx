@@ -1,18 +1,8 @@
 import React from 'react';
-// import Logo from '../assets/my_logo';
 import ShakingHands from '../assets/icons/shaking_hands.jsx'
 import '../styles/Contact.scss';
 
 export default function Contact() {
-  
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   e.stopPropagation();
-  //   [e.target[0], e.target[1], e.target[2]].map(element => {
-  //     console.log(element.value)
-  //     return element.value;
-  //   })
-  // }
 
   return (
     <section id='contact'>

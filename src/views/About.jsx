@@ -1,6 +1,7 @@
 import React from 'react';
-import Henry from '../assets/henry.png';
 import Profile from '../assets/image_profile.jpeg';
+import Henry from '../assets/henry.png';
+import Volta from '../assets/volta.jpg';
 import '../styles/About.scss';
 
 export default function About () {
@@ -22,7 +23,7 @@ export default function About () {
           </div>
           <div className='card'>
             <img 
-              src='https://th.bing.com/th/id/R.ed991c350eb263ad5060a33ad8d2ed38?rik=PM27HQp7MyMCvw&riu=http%3a%2f%2felregionaldigital.com.ar%2fwp-content%2fuploads%2f2021%2f01%2fUBA-XXI.jpg&ehk=rYNK68SyGJuO9jonIpeqzDrc6QP2KMRb1wgKMeVLcbQ%3d&risl=&pid=ImgRaw&r=0'
+              src={Volta}
               alt='UBA XXI'
             />
             <h3>Mi carrera</h3>

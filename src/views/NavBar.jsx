@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MyLogo from '../assets/my_logo.jsx';
+import MyLogo from '../assets/Logo.jsx';
 import '../styles/NavBar.scss';
 
 export default function NavBar () {

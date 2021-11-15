@@ -1,5 +1,5 @@
 import React from 'react';
-import MyLogo from '../assets/my_logo.jsx';
+import MyLogo from '../assets/Logo.jsx';
 import '../styles/Footer.scss';
 
 export default function Footer() {
