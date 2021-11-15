@@ -20,21 +20,44 @@ export default function Contact() {
         <div className='bar-side'>
           <Shaking_hands width='70%' color='#FAFAFA' />
         </div>
-        <form name='contact-form' onSubmit={handleSubmit} className='form-side'>
+        <form 
+          name='contact-form'  
+          className='form-side'
+          method='POST'
+          action='https://formsubmit.co/diegobautista2002@gmail.com'
+          target='_blank'
+        >
           <div>
-            <div name='fullName'>
+            <div className='fullName'>
               <span>Nombre y Apellido</span>
-              <input type='text' placeholder='Nombre completo'/>
+              <input 
+                name='name'
+                required
+                type='text' 
+                placeholder='Ingresa tu nombre'
+                pattern='^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$'
+              />
             </div>
-            <div name='email'>
+            <div className='email'>
               <span>Email</span>
-              <input type='email' placeholder='Ingrese su email'/>
+              <input
+                required
+                name='email'
+                type='email'
+                placeholder='Ingresa tu email'
+                pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'
+              />
             </div>
           </div>
 
-          <div name='message'>
+          <div className='message'>
             <span>Mensaje</span>
-            <textarea id='message' placeholder='Escriba su mensaje'/>
+            <textarea
+              required 
+              id='message'
+              name='message' 
+              placeholder='Escribe un mensaje'
+            />
           </div>
 
           <div name='button'>

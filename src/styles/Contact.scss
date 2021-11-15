@@ -47,24 +47,24 @@
       flex: 3;
       gap: 1.5rem;
     }
-    [name=fullName] {
+    .fullName {
       display: flex;
       flex: 1;
       flex-direction: column;
     }
-    [name=email] {
+    .email {
       display: flex;
       flex: 1.1;
       flex-direction: column;
     }
-    [name=message] {
+    .message {
       display: flex;
       flex: 7;
       flex-direction: column;
     }
-    [name=fullName],
-    [name=email],
-    [name=message] {
+    .fullName,
+    .email,
+    .message {
       margin-top: 1em;
       span {
         font-size: 0.7em;
