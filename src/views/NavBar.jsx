@@ -52,8 +52,8 @@ export default function NavBar () {
         </ul>
         <div className='menu-btn' onClick={toogle}>
           {menu
-            ? <i class='fas fa-times'/>
-            : <i class='fas fa-bars'/>
+            ? <i className='fas fa-times'/>
+            : <i className='fas fa-bars'/>
           }          
         </div>
       </nav>

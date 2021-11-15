@@ -1,24 +1,24 @@
 import React from 'react';
-import Logo from '../assets/my_logo';
-import Shaking_hands from '../assets/icons/shaking_hands.jsx'
+// import Logo from '../assets/my_logo';
+import ShakingHands from '../assets/icons/shaking_hands.jsx'
 import '../styles/Contact.scss';
 
 export default function Contact() {
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    [e.target[0], e.target[1], e.target[2]].map(element => {
-      console.log(element.value)
-      return element.value;
-    })
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   [e.target[0], e.target[1], e.target[2]].map(element => {
+  //     console.log(element.value)
+  //     return element.value;
+  //   })
+  // }
 
   return (
     <section id='contact'>
       <div className='contact'>
         <div className='bar-side'>
-          <Shaking_hands width='70%' color='#FAFAFA' />
+          <ShakingHands width='70%' color='#FAFAFA' />
         </div>
         <form 
           name='contact-form'  

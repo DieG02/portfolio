@@ -15,7 +15,7 @@ export default function Projects() {
             title='Fany' 
             deploy={false} 
             github='https://github.com/DieG02/RN-Fany'
-            stack={['react', 'firebase', 'sass']}
+            stack={['react', 'js']}
           >
             Fany consiste en un reproductor de musica en streamming al puro estilo de spotify combinada con la amplia variedad de youtube, sumandole el plus sin anuncios
           </Card>
@@ -24,7 +24,7 @@ export default function Projects() {
             title='Bilder'
             deploy='https://bilder-landing-page.vercel.app/'
             github='https://github.com/DieG02/Bilder-Admin'
-            stack={['react', 'node', 'bootstrap']}
+            stack={['react', 'node', 'js']}
           >
             Bilder surgió con la idea de facilitar el proceso de compra para las pequeñas y medianas empresas, con el fin de ofrecer un mejor precio al consumidor final.
           </Card>
@@ -33,7 +33,7 @@ export default function Projects() {
             title='Henry Bank'
             deploy={false}
             github='https://github.com/DieG02/Fintech'
-            stack={['react', 'node', 'js', 'psql', 'reudx']}
+            stack={['react', 'redux', 'node', 'sql']}
           >
             Henry Bank fue mi proyecto final del Bootcamp Henry, en el terminamos de consolidar todos los conocimientos adquiridos en el curso, empleando las mejores prácticas.
           </Card>

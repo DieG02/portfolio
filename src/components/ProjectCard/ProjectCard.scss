@@ -7,12 +7,7 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.30);
-  -webkit-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.30);
-  -moz-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.30);
-  &:hover {
-    box-shadow: none;
-  }
+
   .top {
     display: flex;
     position: relative;
@@ -21,23 +16,19 @@
       position: inherit;
       object-fit: contain;
       width: 100%;
+      margin: 0;
+      padding: 0;
       border-radius: 15px 15px 0 0;
     }
-    span {
-      padding: 0.5em 0.7em;
-      box-sizing: border-box;
+    i {
       position: absolute;
-      display: inline-flex;
-      width: 100%;
+      right: 0.7em;
+      top: 0.5em;
       color: $light;
-      justify-content: space-between;
-      a {
-        cursor: pointer;
-      }
     }
   }
   .mid {
-    padding: 1em 0.5em;
+    padding: 1rem 1rem 1.3rem 1rem;
     flex: 1;
     h3 {
       font-size: 1.4em;
@@ -46,6 +37,7 @@
     p {
       margin-top: 0.5em;
       font-size: 0.9em;
+      text-align: justify;
     }
     button {
       border: solid 2px $primary;

@@ -4,7 +4,7 @@ function HandsIcon({ width, height, color }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      ariaHidden="true"
+      arialhidden="true"
       className="svg-inline--fa fa-handshake fa-w-20 fa-5x"
       data-icon="handshake"
       data-prefix="fas"
