@@ -1,7 +1,7 @@
 @import '../../styles/App.scss';
 
 .card {
-  width: 300px;
+  width: 330px;
   max-width: 450px;
   background: white;
   border-radius: 15px;
@@ -28,7 +28,7 @@
     }
   }
   .mid {
-    padding: 1rem 1rem 1.3rem 1rem;
+    padding: 0.5rem 1rem 1.3rem 1rem;
     flex: 1;
     h3 {
       font-size: 1.4em;

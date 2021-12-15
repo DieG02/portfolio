@@ -38,8 +38,8 @@
       margin-top: 4em;
       
       &:first-of-type img {
-        background: rgb(102,102,102);
-        background: radial-gradient(circle, rgba(102,102,102,1) 0%, rgba(68,68,68,1) 21%, rgba(47,47,47,1) 50%, rgba(34,34,34,1) 70%, rgba(16,16,16,1) 95%, rgba(0,0,0,1) 100%);        box-shadow: none;
+        background: $blue;
+        // background: radial-gradient(circle, rgba(102,102,102,1) 0%, rgba(68,68,68,1) 21%, rgba(47,47,47,1) 50%, rgba(34,34,34,1) 70%, rgba(16,16,16,1) 95%, rgba(0,0,0,1) 100%);        box-shadow: none;
       }
       img {
         width: 8em;
