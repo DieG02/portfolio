@@ -23,17 +23,19 @@ export default function ProjectCard ({ image, title, children, deploy, github, s
     sql: (key) => <PostgreIcon key={key} width='20px' />,
   }
 
-  const avoidOnClick = () => {
-    if (!deploy) return false
-  }
-
   return (
     <div className='card'>
       <div className='top'>
-        <a href={deploy} onClick={avoidOnClick}>
-          <i className={`fas ${!deploy ? 'fa-lock' : 'fa-angle-right'}`} />
-          <img className='image' src={image} alt='wheater_app'/>
-        </a>
+        {deploy
+        ? <a href={deploy} className='unlock'>
+            <i className='fas fa-angle-right' />
+            <img className='image' src={image} alt={`${title}`} />
+          </a>
+        : <span className='lock'>
+            <i className='fas fa-lock' />
+            <img className='image' src={image} alt={`${title}`} />
+          </span>  
+        }
       </div>
       <div className='mid'>
         <h3>{title}</h3>

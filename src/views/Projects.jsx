@@ -29,13 +29,13 @@ export default function Projects() {
             Bilder surgió con la idea de facilitar el proceso de compra para las pequeñas y medianas empresas, con el fin de ofrecer un mejor precio al consumidor final.
           </Card>
           <Card
-            image='https://i.ibb.co/hDLbqdV/Uala-landing.png'
-            title='Henry Bank'
+            image='https://i.ibb.co/CJ3Ms3Q/Ubank.png'
+            title='Ubank'
             deploy={null}
             github='https://github.com/DieG02/Fintech'
             stack={['react', 'redux', 'node', 'sql']}
           >
-            Henry Bank fue mi proyecto final del Bootcamp Henry, en el terminamos de consolidar todos los conocimientos adquiridos en el curso, empleando las mejores prácticas.
+            Ubank fue mi proyecto final del Bootcamp Henry, en el cual terminamos de consolidar todos los conocimientos adquiridos en el curso, empleando las mejores prácticas.
           </Card>
         </div>
       </div>
