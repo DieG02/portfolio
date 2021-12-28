@@ -22,6 +22,9 @@ export default function Home () {
               <a href='mailto:diegobautista2002@gmail.com' target='_blank' className='icon-container' rel='noopener noreferrer'>
                 <i className='far fa-envelope icon' />
               </a>
+              <a href='https://drive.google.com/uc?id=1DM1wo7e84qS6p7y-ldVbV09ltn57fiZ7&export=download' download='Diego Bautista - Fullstack Developer' target='_blank' className='icon-container' rel='noopener noreferrer'>
+                <i className='fas fa-download icon' />
+              </a>
             </div>
           </div>
 
