@@ -5,22 +5,22 @@ import '../styles/NavBar.scss';
 export default function NavBar () {
   
   window.onscroll = function () {
-    const element = document.getElementsByClassName('navbar');
+    const navbar = document.getElementsByClassName('navbar');
     if (window.pageYOffset > 0) {
-      element[0].classList.add('solid');
+      navbar[0].classList.add('solid');
     } else {
-      element[0].classList.remove('solid');
+      navbar[0].classList.remove('solid');
     }
   }
 
   const [menu, showMenu] = useState(true);
   const toogle = () => {
     showMenu(!menu);
-    const element = document.querySelector('.navbar nav ul');
+    const ul = document.querySelector('.navbar nav ul');
+    console.log('ejecuta3');
     menu 
-      ? element.classList.remove('full')
-      : element.classList.add('full');
-    console.log(element);
+      ? ul.classList.remove('full')
+      : ul.classList.add('full');
   }
 
   return (

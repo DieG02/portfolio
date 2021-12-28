@@ -36,6 +36,9 @@
             color: $primary;
           }
         }
+        &:last-of-type .icon {
+          font-size: 0.85em;
+        }
       }
     }
     h1 {

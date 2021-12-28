@@ -17,7 +17,7 @@ export default function About () {
             />
             <h3>¿Quién soy?</h3>
             <p>
-              ¡Hola! Soy Diego Bautista, tengo 19 años y soy un apasionado por el mundo IT.
+              ¡Hola! Soy <b>Diego Bautista</b>, tengo 19 años y soy un apasionado por el mundo IT.
               Me encanta programar para crear soluciones, trabajar en equipo, mantener una buena relación con mis compañeros y estar en constante aprendizaje.
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function About () {
             />
             <h3>Mi carrera</h3>
             <p>
-              Actualmente me encuentro en el ciclo básico de la carrera de Lic. en Análisis de Sistemas en la UBA.
+              Actualmente me encuentro en el ciclo básico de la carrera de <b>Lic. en Análisis de Sistemas</b> en la UBA.
               Además, estoy realizando diversos cursos relacionados a la programación con el fin de aprender nuevos lenguajes.
             </p>
           </div>
@@ -39,7 +39,7 @@ export default function About () {
             />
             <h3>Aprendizaje</h3>
             <p>
-              De la mano de Henry, un bootcamp en programación con +700hs de código; 
+              De la mano de <b>Henry</b>, un bootcamp en programación con +700hs de código; 
               me formé y adquirí las habilidades necesarias para adentrarme en el mundo IT.
               Actualmente me encuentro en la búsqueda de mi primera oportunidad laboral. 
             </p>

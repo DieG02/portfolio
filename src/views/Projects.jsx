@@ -35,7 +35,7 @@ export default function Projects() {
             github='https://github.com/DieG02/Fintech'
             stack={['react', 'redux', 'node', 'sql']}
           >
-            Ubank fue mi proyecto final del Bootcamp Henry, en el cual terminamos de consolidar todos los conocimientos adquiridos en el curso, empleando las mejores prácticas.
+            Ubank, mi remake de la HenryBank, fue mi proyecto final de Henry, en el cual terminamos de consolidar todos los conocimientos adquiridos en el curso, empleando las mejores prácticas.
           </Card>
         </div>
       </div>
